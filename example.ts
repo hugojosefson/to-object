@@ -1,4 +1,4 @@
-import { toObject } from "https://deno.land/x/to_object_reducer/mod.ts";
+import { toObject } from "https://deno.land/x/to_object/mod.ts";
 
 const peopleAndTheirPhoneNumbers: Array<[string, string]> = [
   ["Alice", "11111111"],

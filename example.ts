@@ -1,11 +1,9 @@
-import { toObject } from "https://deno.land/x/to_object/mod.ts";
-
 const peopleAndTheirPhoneNumbers: Array<[string, string]> = [
   ["Alice", "11111111"],
   ["Bob", "22222222"],
   ["Eve", "44444444"],
 ];
 
-const phoneBook = peopleAndTheirPhoneNumbers.reduce(toObject, {});
+const phoneBook = Object.fromEntries(peopleAndTheirPhoneNumbers);
 
 console.log(phoneBook);
